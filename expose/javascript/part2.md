@@ -15,6 +15,7 @@
 ## Data Types
 
 12. Notations:
+    
     A. student.name
 
     B. student['Grad Year']
@@ -24,4 +25,42 @@
     D. student['Favorite Teacher'].name
 
     E. student.courseLoad[0]
-13. 
+
+## Basic Operators & Type Conversion
+13. Arithmetic
+
+    A. `"32"` - Since '3' is a string, 2 is coerced into '2' for string concatenation.
+
+    B. `1` - The subtraction results in a numeric conversion where '3' becomes 3.
+
+    C. `3` - null is coerced to 0 for the numeric addition
+
+    D. `"3null"` - null turns into "null" and gets concatenated because '3' is a string.
+
+    E. `4` - true becomes 1 in numeric coercion since 3 is a number
+
+    F. `0` - both false and null are coerced numerically to 0
+
+    G. `"3undefined"` - undefined is coerced into "undefined" and concatenated since '3' is a string.
+
+    H. `NaN` - undefined is coerced to NaN and any arithmetic operation involving NaN results in NaN.
+
+14. Comparison
+    
+    A. `true` - since different types are being compared, JavaScripts convert them to numbers
+
+    B. `false` - since both values being compared are strings, we will compare the strings character by character (dictionary/lexicographical order) starting with '2' < '1' which is not true, resulting in false being returned. 
+
+    C. `true` - different types are being compared in this problem, so they are converted to numbers since this is a regular equality operator.
+
+    D. `false` - this time, a strict equality operator is being used, so the values will be compared without converting them. The number 2 is NOT equal to the string '2'.
+
+    E. `false` - since these values are different types, and we are using the regular equality operator, they are converted to numbers. true becomes 1 which is NOT equal to 2.
+
+    F. `true` - Boolean(2) computes to true since any non-zero number is true. This means that the expression essentially becomes true === true.
+
+15. In javascript the `==` (regular equality operator) does not differentiate values by their types. If the operands being compared are different types, they are converted to numbers before being compared. The `===` (strict equality operator) checks the equality without converting the type. If the operands are different types, false is returned.
+
+## Loops
+
+16. **See part2-question16.js**
