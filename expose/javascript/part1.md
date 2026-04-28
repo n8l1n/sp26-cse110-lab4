@@ -13,4 +13,4 @@
 ### Const Declaration
 6. Line 9 is unable to print anything due to an error occuring in line 7 (where execution stops): `TypeError: Assignment to constant variable.`
     This error occurs since line 7 is attempting to store the value of `num1 + num2` in `result` which was previous declared as a `const` in line 5. Constants cannot be reassigned, hence, the error.
-7. Line 13 is also unable to print anything as a result of the same error described in **question 6**
+7. Line 13 is also unable to print anything as a result of the same error described in **question 6** which stops the execution of the program

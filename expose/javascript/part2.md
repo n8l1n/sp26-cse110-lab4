@@ -64,3 +64,7 @@
 ## Loops
 
 16. **See part2-question16.js**
+
+## Functions
+
+17.  [ 2, 4, 6 ] will be returned after the function executes with the given parameters.  When the function is called, for each element in the array, the result of calling the callback function with that element is pushed into `newArr`. In this case, the callback function is `doSomething` which takes the argument, doubles it, and returned it. From here, it is pushed into `newArr`. Once this has been done for each element in `array`, `newArr` will contain all of  `array`'s elements but doubled by the callback. Then, `newArr` is returned.
