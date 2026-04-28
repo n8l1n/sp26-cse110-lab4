@@ -68,3 +68,19 @@
 ## Functions
 
 17.  [ 2, 4, 6 ] will be returned after the function executes with the given parameters.  When the function is called, for each element in the array, the result of calling the callback function with that element is pushed into `newArr`. In this case, the callback function is `doSomething` which takes the argument, doubles it, and returned it. From here, it is pushed into `newArr`. Once this has been done for each element in `array`, `newArr` will contain all of  `array`'s elements but doubled by the callback. Then, `newArr` is returned.
+
+## setInterval(), setTimeout(), clearTimeout()
+
+18. **See part2-question18.js**
+19. Output:
+    
+    1
+
+    4
+
+    3
+
+    2
+
+    When the function is called, `console.log(1)` executes immediately, printing 1. Then, `console.log(2)` is set to execute in 1000 milliseconds, then `console.log(3)` is set to exectute with a delay of zero, but it does not run immediately. Instead, it is placed in a (callback) queue and runs at the next opportunity, after all of the currently executing code has been executing. Then `console.log(4)` is executed printing 4. Now that all of the ongoing code is done executing, functions in the queue can now be executed, starting with `console.log(3)` printing 3, and finally `console.log(2)` printing 2.
+
