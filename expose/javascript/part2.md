@@ -15,8 +15,13 @@
 ## Data Types
 
 12. Notations:
-    A.
-    B.
-    C.
-    D.
-    E.
+    A. student.name
+
+    B. student['Grad Year']
+
+    C. student.greeting()
+
+    D. student['Favorite Teacher'].name
+
+    E. student.courseLoad[0]
+13. 
