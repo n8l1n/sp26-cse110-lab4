@@ -1,3 +1,3 @@
 # DevTools - Debugging
 1. The program is storing the inputted elements as strings and performing JavaScript string concatenations on the values because `num1` and `num2` are being retrieved with `.value` which returns a string.
-2. To fix this, I would convert the variables `num1` and `num2` to numbers. **See fix.png**
+2. To fix this, I would convert the variables `num1` and `num2` to numbers. **See fix.png** - I used the `Number()` function to convert the `num1` and `num2` variables to numbers.
